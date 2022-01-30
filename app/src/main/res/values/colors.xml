@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- for the NON-Compose UI -->>
+
+    <color name="colorPrimary">#515673</color>
+    <color name="colorPrimaryDark">#676D91</color>
+    <color name="colorAccent">#ff512f</color>
+    <color name="colorWarning">#FF0026</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBackgroundShade">#88FFFFFF</color>
+    <color name="colorText">#252525</color>
+    <color name="colorTextTitle">@color/colorText</color>
+
+    <color name="colorPastel01">#BAD851</color>
+    <color name="colorPastel02">#ECE926</color>
+    <color name="colorPastel03">#E4C625</color>
+    <color name="colorPastel04">#83C55F</color>
+    <color name="colorPastel05">#8CD0CC</color>
+    <color name="colorPastel06">#6EABD5</color>
+    <color name="colorPastel07">#7C7ABA</color>
+    <color name="colorPastel08">#9E7CB7</color>
+    <color name="colorPastel09">#BA6AA8</color>
+
+</resources>

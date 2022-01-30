@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- for the NON-Compose UI -->>
+
+    <style name="tictactoebutton">
+        <item name="android:layout_width">@dimen/common_space_medium</item>
+        <item name="android:layout_height">@dimen/common_space_medium</item>
+        <item name="android:textSize">@dimen/common_textsize_large</item>
+    </style>
+
+    <style name="normalbutton">
+        <item name="android:background">@drawable/button_selector</item>
+    </style>
+
+</resources>

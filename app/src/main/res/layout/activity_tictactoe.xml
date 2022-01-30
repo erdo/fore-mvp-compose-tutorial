@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tttWinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/common_space_small"
+            android:textColor="@color/colorTextTitle"
+            android:textStyle="bold"
+            android:textSize="@dimen/common_textsize_extra_large" />
+
+        <LinearLayout
+            android:id="@+id/tttNextPlayerContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/common_space_small"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tttNextPlayerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="@dimen/common_textsize_extra_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextTitle"
+                android:text="@string/to_play"
+                android:textSize="@dimen/common_textsize_extra_large" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <GridLayout
+                android:id="@+id/tttBoardGridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:padding="@dimen/common_space_small"
+                android:layout_centerInParent="true"
+                android:rowCount="3">
+
+                <Button
+                    android:id="@+id/cell02"
+                    style="@style/tictactoebutton"
+                    android:backgroundTint="#BAD851" />
+
+                <Button
+                    android:id="@+id/cell12"
+                    style="@style/tictactoebutton"
+                    android:backgroundTint="#ECE926" />
+
+                <Button
+                    android:id="@+id/cell22"
+                    style="@style/tictactoebutton"
+                    android:backgroundTint="#E4C625" />
+
+                <Button
+                    android:id="@+id/cell01"
+                    style="@style/tictactoebutton"
+                    android:backgroundTint="#83C55F" />
+
+                <Button
+                    android:id="@+id/cell11"
+                    style="@style/tictactoebutton"
+                    android:backgroundTint="#8CD0CC" />
+
+                <Button
+                    android:id="@+id/cell21"
+                    style="@style/tictactoebutton"
+                    android:backgroundTint="#6EABD5" />
+
+                <Button
+                    android:id="@+id/cell00"
+                    style="@style/tictactoebutton"
+                    android:backgroundTint="#7C7ABA" />
+
+                <Button
+                    android:id="@+id/cell10"
+                    style="@style/tictactoebutton"
+                    android:backgroundTint="#9E7CB7" />
+
+                <Button
+                    android:id="@+id/cell20"
+                    style="@style/tictactoebutton"
+                    android:backgroundTint="#BA6AA8" />
+
+            </GridLayout>
+
+            <FrameLayout
+                android:id="@+id/tttBoardShade"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/board_shade_size"
+                android:background="@color/colorBackgroundShade"
+                android:layout_centerInParent="true"
+                android:clickable="false" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/tttBusyProg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tttNextPlayerContainer"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tttErrorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tttNextPlayerContainer"
+            android:layout_centerHorizontal="true"
+            android:text="@string/msg_error_misc"
+            android:textColor="@color/colorWarning"
+            android:textSize="@dimen/common_textsize_extra_large" />
+
+        <Button
+            android:id="@+id/tttRetryAutoPlayerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tttErrorText"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_selector"
+            android:text="@string/retry_autoplayer" />
+
+        <Button
+            android:id="@+id/tttRestartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/common_space_small"
+            android:background="@drawable/button_selector"
+            android:text="@string/reset" />
+
+    </RelativeLayout>
+
+</ScrollView>

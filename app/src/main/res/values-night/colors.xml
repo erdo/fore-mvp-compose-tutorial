@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- for the NON-Compose UI -->>
+
+    <color name="colorPrimary">#242835</color>
+    <color name="colorPrimaryDark">#323547</color>
+    <color name="colorAccent">#ff512f</color>
+    <color name="colorBackground">#171717</color>
+    <color name="colorBackgroundShade">#88171717</color>
+    <color name="colorText">#111111</color>
+    <color name="colorTextTitle">#999999</color>
+
+</resources>
