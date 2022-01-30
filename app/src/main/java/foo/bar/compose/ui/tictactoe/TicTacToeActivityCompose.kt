@@ -88,7 +88,6 @@ fun GameScreen(
                 .align(BottomCenter),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-
             Button(
                 modifier = Modifier
                     .wrapContentSize(),
@@ -124,7 +123,6 @@ fun HeaderLayout(
     ) {
 
         if (viewState.gameFinished()) {
-
             Text(
                 text = stringResource(viewState.winner.winMessageRes),
                 color = colorResource(id = R.color.colorTextTitle),
@@ -150,7 +148,7 @@ fun HeaderLayout(
         if (viewState.error != ErrorMsg.NoError) {
             Text(
                 modifier = Modifier.wrapContentSize(),
-                text = AnnotatedString(stringResource(viewState.error.msgRes)),
+                text = stringResource(viewState.error.msgRes),
                 color = colorResource(R.color.colorWarning),
                 fontSize = fontSizeResource(id = R.dimen.common_textsize_extra_large)
             )
