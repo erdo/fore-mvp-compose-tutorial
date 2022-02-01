@@ -1,6 +1,6 @@
 # Tic Tac Toe, Jetpack Compose
 
-Companion app for the dev.to post Tic-tac-toe: From MVP to Jetpack Compose
+Companion app for the dev.to post [Tic-tac-toe: from MVP to Jetpack Compose](https://dev.to/erdo/tic-tac-toe-from-mvp-to-jetpack-compose-57d8)
 
 ![fore tic-tac-toe sample app](tic_tac_toe.png)
 
