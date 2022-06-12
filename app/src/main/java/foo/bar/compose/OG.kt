@@ -4,7 +4,7 @@ import android.app.Application
 import co.early.fore.kt.core.delegate.DebugDelegateDefault
 import co.early.fore.kt.core.delegate.Fore
 import co.early.fore.kt.net.InterceptorLogging
-import co.early.fore.kt.net.ktor.CallProcessorKtor
+import co.early.fore.kt.net.ktor.CallWrapperKtor
 import co.early.persista.PerSista
 import foo.bar.example.forektorkt.api.CustomKtorBuilder
 import foo.bar.compose.api.GlobalErrorHandler
@@ -39,7 +39,7 @@ object OG {
             AutoPlayerInterceptor({ game }),
             InterceptorLogging(logger) //logging interceptor should be the last one
         )
-        val callProcessor = CallProcessorKtor(
+        val callWrapper = CallWrapperKtor(
             errorHandler = GlobalErrorHandler(logger),
         )
 
@@ -52,7 +52,7 @@ object OG {
 
         game = Game(
             autoPlayerService = autoPlayerService,
-            callProcessorKtor = callProcessor,
+            callWrapper = callWrapper,
             perSista = perSista
         )
 

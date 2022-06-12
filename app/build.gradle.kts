@@ -10,12 +10,12 @@ val composeVersion = rootProject.extra["composeVersion"] as String
 
 android {
 
-    compileSdk = 31
+    compileSdk = 32
 
     defaultConfig {
         applicationId = appId
         minSdk = 21
-        targetSdk = 31
+        targetSdk = 32
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -39,11 +39,11 @@ android {
 dependencies {
 
     // reactivity
-    implementation("co.early.fore:fore-kt-android:1.5.8")
+    implementation("co.early.fore:fore-kt-android:1.5.14")
     implementation("co.early.fore:fore-kt-android-compose:$composeVersion")
 
     // persistence
-    implementation("co.early.persista:persista:1.0.0")
+    implementation("co.early.persista:persista:1.1.0")
 
     // compose
     implementation("androidx.compose.ui:ui:$composeVersion")
@@ -53,7 +53,7 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling-preview:$composeVersion")
 
     // design
-    implementation("com.google.android.material:material:1.5.0")
+    implementation("com.google.android.material:material:1.6.1")
 
     // networking
     implementation("io.ktor:ktor-client-serialization:1.5.2")
